@@ -48,10 +48,10 @@ class BookSearch extends Component {
           this.setState(() => {
             return {Books: books}
           })
+        }else {
+          this.setState({Books: []})
         }
       })
-    } else {
-      this.setState({Books: [], query: ''})
     }
   }
 
@@ -80,4 +80,4 @@ class BookSearch extends Component {
   }
 }
 
-export default BookSearch;
+export default BookSearch
